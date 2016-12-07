@@ -1,0 +1,20 @@
+<div style="margin-left: 10px">
+    <button ng-click="$ctrl.connect()">Connect</button>
+    <br>
+    <br>
+    <button ng-click="$ctrl.disconnect()">Disconnect</button>
+    <br>
+    <br>
+    <button ng-click="$ctrl.subscribe()">Subscribe</button>
+    <br>
+    <br>
+    <button ng-click="$ctrl.unsubscribe()">Unsubscribe</button>
+    <br>
+    <br>
+    <button ng-click="$ctrl.ping()">Ping Request</sbutton>
+</div>
+<div style="margin-left: 10px; margin-top :20px">
+    <label ng-repeat="packet in $ctrl.dataPackets">{{packet}}
+    </label>
+    <br>
+</div>
